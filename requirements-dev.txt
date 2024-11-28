@@ -1,0 +1,7 @@
+isort
+moto < 5.0.0  # In v5.0.0, all decorators are replaced with `mock_aws` (including `mock_s3`)
+pylint
+pytest
+pytest-mock
+ruff
+yapf
