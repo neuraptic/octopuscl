@@ -1,0 +1,10 @@
+**/artifacts
+*.cache
+*.db
+.env
+*.egg-info
+.idea
+*.log
+__pycache__
+venv
+.vscode

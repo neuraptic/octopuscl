@@ -1,0 +1,15 @@
+avalanche-lib
+boto3
+botocore
+docker
+marshmallow
+marshmallow_enum
+mlflow
+numpy >= 1.20
+overrides
+pandas
+paramiko
+pyyaml
+torch
+tqdm
+transformers
