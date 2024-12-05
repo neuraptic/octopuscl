@@ -4,6 +4,7 @@
 
 [![Format & Style](https://github.com/neuraptic/octopuscl/actions/workflows/format-and-lint.yml/badge.svg?branch=main)](https://github.com/neuraptic/octopuscl/actions/workflows/format-and-lint.yml)
 [![Tests](https://github.com/neuraptic/octopuscl/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/neuraptic/octopuscl/actions/workflows/run-tests.yml)
+[![PyPI Publication](https://github.com/neuraptic/octopuscl/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/neuraptic/octopuscl/actions/workflows/publish-to-pypi.yml)
 
 </div>
 
