@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=62.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "octopuscl-lib"
+version = "0.1.0-beta.0"
+description = "A framework for building and experimenting with multimodal models in continual learning scenarios"
+readme = "README.md"
+authors = [
+    {name = "Neuraptic AI", email = "contact@neuraptic.ai"}
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/neuraptic/octopuscl"
+
+[project.scripts]
+octopuscl-run-experiments = "octopuscl.scripts.run_experiments:main"
+octopuscl-run-trial = "octopuscl.scripts.run_trial:main"
+octopuscl-run-dataset-manager = "octopuscl.scripts.run_dataset_manager:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}

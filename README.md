@@ -10,6 +10,7 @@
 <!-- toc -->
 
 - [Introduction](#introduction)
+- [Installation](#installation)
 - [Usage](#usage)
   * [Environments](#environments)
   * [Dataset Manager](#dataset-manager)
@@ -35,6 +36,14 @@ It is composed of the following components:
   **Experiment Registry**.
 - **Model Manager** (not available yet)
 
+## Installation
+
+You can install OctopusCL with pip:
+
+```bash
+pip install octopuscl-lib
+```
+
 ## Usage
 
 This section provides all the necessary instructions and examples to effectively use OctopusCL, covering dataset 
@@ -53,8 +62,9 @@ OctopusCL can run in three different environments:
 ### Dataset Manager
 
 The Dataset Manager allows for uploading and downloading datasets to and from the Dataset Repository. It is 
-accessible through the [`octopuscl/scripts/run_dataset_manager.py`](octopuscl/scripts/run_dataset_manager.py) script 
-(more information about the arguments on the [Managing datasets](#managing-datasets) section below).
+accessible through the 
+[`octopuscl/scripts/run_dataset_manager.py`](https://github.com/neuraptic/octopuscl/blob/main/octopuscl/scripts/run_dataset_manager.py) 
+script (more information about the arguments on the [Managing datasets](#managing-datasets) section below).
 
 #### Concepts
 
@@ -81,12 +91,14 @@ A dataset must be stored in a dedicated directory that contains the following fi
 - `splits` (optional): A directory containing pre-defined splits that determine how examples are distributed across 
   experiences and partitions (training, test, validation).
 
-See [docs/datasets.md](docs/datasets.md) for detailed instructions on how to build datasets.
+See [docs/datasets.md](https://github.com/neuraptic/octopuscl/blob/main/docs/datasets.md) for detailed instructions on 
+how to build datasets.
 
 #### Managing datasets
 
 To upload or download a dataset, run 
-[`octopuscl/scripts/run_dataset_manager.py`](octopuscl/scripts/run_dataset_manager.py) with the following arguments:
+[`octopuscl/scripts/run_dataset_manager.py`](https://github.com/neuraptic/octopuscl/blob/main/octopuscl/scripts/run_dataset_manager.py) 
+with the following arguments:
 
 - `-e, --environment` (required): The environment where the dataset will be uploaded or downloaded. It can be 
   `development`, `staging`, or `production`.
@@ -115,8 +127,8 @@ Examples:
 ### Experiment Manager
 
 The Experiment Manager allows for running and tracking experiments. It is accessible through the 
-[`octopuscl/scripts/run_experiments.py`](octopuscl/scripts/run_experiments.py) script (more information about the 
-arguments on the [Running experiments](#running-experiments) section below).
+[`octopuscl/scripts/run_experiments.py`](https://github.com/neuraptic/octopuscl/blob/main/octopuscl/scripts/run_experiments.py) 
+script (more information about the arguments on the [Running experiments](#running-experiments) section below).
 
 #### Concepts
 
@@ -144,17 +156,19 @@ The Experiment Manager is built upon the following concepts:
 #### Building experiments
 
 An experiment is defined in a YAML file that must follow the structure described in 
-[docs/experiments.md](docs/experiments.md). An experiment plan is given by a dedicated directory that contains the 
-YAML files defining the experiments.
+[docs/experiments.md](https://github.com/neuraptic/octopuscl/blob/main/docs/experiments.md). An experiment plan is 
+given by a dedicated directory that contains the YAML files defining the experiments.
 
 In addition to the definition and configuration of the experiments, many functionalities and components can be 
 customized, including AI models, transformations, metrics, and artifacts, among others. See 
-[docs/customization.md](docs/customization.md) for detailed instructions on how to implement custom classes.
+[docs/customization.md](https://github.com/neuraptic/octopuscl/blob/main/docs/customization.md) for detailed 
+instructions on how to implement custom classes.
 
 #### Running experiments
 
-To run experiments, simply run [`octopuscl/scripts/run_experiments.py`](octopuscl/scripts/run_experiments.py) with the 
-following arguments:
+To run experiments, simply run 
+[`octopuscl/scripts/run_experiments.py`](https://github.com/neuraptic/octopuscl/blob/main/octopuscl/scripts/run_experiments.py) 
+with the following arguments:
 
 - `-e, --environment` (required): The environment where the experiments will be run. It can be `development`, 
   `staging`, or `production`.
@@ -173,10 +187,12 @@ called [MLflow Tracking UI](https://mlflow.org/docs/latest/tracking.html#trackin
 
 Regardless of the environment in which you are running the trials, the following requirements must be met:
 
-- Python 3.10+ and dependencies (see [requirements.txt](requirements.txt))
+- Python 3.10+ and dependencies (see 
+  [requirements.txt](https://github.com/neuraptic/octopuscl/blob/main/requirements.txt))
 
-Additionally, you will need to set specific environment variables (see [`octopuscl.env`](octopuscl/env.py)) depending on 
-the environment in which you are running the trials.
+Additionally, you will need to set specific environment variables (see 
+[`octopuscl.env`](https://github.com/neuraptic/octopuscl/blob/main/octopuscl/env.py)) depending on the environment in 
+which you are running the trials.
 
 ### Development Environment
 
@@ -198,7 +214,7 @@ If you are running trials locally, you must also have:
 
 ## Contributions
 
-See [contributing guidelines](CONTRIBUTING.md).
+See [contributing guidelines](https://github.com/neuraptic/octopuscl/blob/main/CONTRIBUTING.md).
 
 ## Maintainers
 
