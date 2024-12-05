@@ -12,6 +12,7 @@ authors = [
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
+keywords = ["machine-learning", "continual-learning", "incremental-learning", "lifelong-learning", "multimodal"]
 classifiers = [
     "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: MIT License",
