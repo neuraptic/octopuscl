@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 jobs:
   run-tests:
+    name: Run tests
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: test
